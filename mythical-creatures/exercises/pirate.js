@@ -3,9 +3,9 @@ class Pirate {
     this.name = name;
     this.job = job || 'scallywag';
     this.cursed = false;
-  }
+}
 
-robShip() {
+  robShip() {
     return `YAARRR!`;
   }
 }
