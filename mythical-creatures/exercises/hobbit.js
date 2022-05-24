@@ -6,7 +6,6 @@ class Hobbit {
     this.old = false;
     this.hasRing = false;
 }
-
   celebrateBirthday(age) {
     this.age++
     if (this.age > 32) {
