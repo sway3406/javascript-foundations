@@ -2,8 +2,9 @@ var Person = require('./person');
 var Statue = require('./statue');
 
 class Medusa {
-  constructor(name) {
+  constructor(name, statues) {
     this.name = name;
+    this.statues = [];
 
   }
 }
