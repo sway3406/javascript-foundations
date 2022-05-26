@@ -9,10 +9,18 @@ class Skier {
     this.skillLevel+=1
   }
   pickSlope() {
-    if(this.skillLevel > 2) {
-      this.nextSlope = 'blue square';
+    if (this.skillLevel > 4) {
+      this.nextSlope = 'black diamond';
+    } else if(this.skillLevel >= 2) {
+       this.nextSlope = 'blue square';
     }
   }
 }
 
+
 module.exports = Skier;
+
+
+
+// else if (this.skillLevel > 4) {
+//   this.nextSlope = 'black diamond';
