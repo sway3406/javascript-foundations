@@ -1,7 +1,7 @@
 class Skier {
-  constructor(name, hasLiftTicket, skillLevel, nextSlope) {
+  constructor(name, hasLiftTicket) {
     this.name = name;
-    this.hasLiftTicket = true;
+    this.hasLiftTicket = hasLiftTicket;
     this.skillLevel = 1;
     this.nextSlope = 'green circle';
   }
