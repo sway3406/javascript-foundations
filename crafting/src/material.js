@@ -1,3 +1,5 @@
+var Craft = require("../src/craft.js");
+
 class Material {
   constructor(name, price, amount, units){
     this.name = name;
@@ -14,8 +16,8 @@ class Material {
     }
   }
   calculateMaterialCost() {
-  var totalCost = this.amount * this.price;
-  return totalCost;
+    var totalCost = this.amount * this.price;
+    return totalCost;
   }
 }
 
