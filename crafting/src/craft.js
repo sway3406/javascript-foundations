@@ -1,3 +1,5 @@
+var Material = require("../src/material.js");
+
 class Craft {
   constructor(craft) {
     this.name = craft.type;
@@ -8,8 +10,13 @@ class Craft {
     this.completed = true;
     return `All done! It looks great!`;
   }
-  calculateProjectTotal() {
- 
+  calculateProjectTotal(price, amount) {
+  var totalCost = 0;
+    for (var i = 0; i < this.materials.length; i++) {
+      totalCost += (this.materials[i].amount * this.materials[i].price);
+    }
+    return totalCost;
+    }
   }
-}
+
 module.exports = Craft;
