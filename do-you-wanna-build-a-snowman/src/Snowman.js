@@ -1,9 +1,11 @@
+var Human = require("../src/Human");
+
 class Snowman {
-  constructor(snowPerson) {
-    this.carrots = snowPerson.carrots;
-    this.coal = snowPerson.coal;
-    this.buttons = snowPerson.buttons;
-    this.snowballs = snowPerson.snowballs;
+  constructor(snowMan) {
+    this.carrots = snowMan.carrots;
+    this.coal = snowMan.coal;
+    this.buttons = snowMan.buttons;
+    this.snowballs = snowMan.snowballs;
     this.magicHat = false;
   }
   canWearMagicHat() {
