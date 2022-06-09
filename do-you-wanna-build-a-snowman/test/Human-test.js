@@ -63,7 +63,7 @@ describe("Human", function () {
     assert.equal(snowman.snowballs, 3);
   });
 
-  it('should be able to put a magic hat on the snowman to make it come alive', function() {
+  it.skip('should be able to put a magic hat on the snowman to make it come alive', function() {
     // HINT: You will need to call one of your snowman methods
     var human = new Human('scott');
 
@@ -82,7 +82,7 @@ describe("Human", function () {
     assert.equal(human.placeMagicHat(), 'Woah, this snowman is coming to life!')
   });
 
-  it('should be able to fail at putting a magic hat on the snowman', function () {
+  it.skip('should be able to fail at putting a magic hat on the snowman', function () {
     var human = new Human('scott');
 
     human.gatherMaterials('coal', 0);

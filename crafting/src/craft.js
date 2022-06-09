@@ -1,9 +1,9 @@
 var Material = require("../src/material.js");
 
 class Craft {
-  constructor(craft) {
+  constructor(craftObj) {
     this.name = craft.type;
-    this.materials = craft.materials;
+    this.materials = craftObj.materials;
     this.completed = false;
   }
   completeCraft() {
