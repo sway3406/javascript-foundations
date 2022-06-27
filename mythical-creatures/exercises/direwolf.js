@@ -18,6 +18,10 @@ class Direwolf {
             this.starksToProtect.push(stark);
         }
     }
+    leave(stark) {
+        this.starksToProtect = [];
+        stark.safe = false;
+    }
 }
 
 
